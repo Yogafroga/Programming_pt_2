@@ -46,22 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="CardGame_form.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="CardGame_form.Designer.cs">
+      <DependentUpon>CardGame_form.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SetCardWindow.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SetCardWindow.Designer.cs">
-      <DependentUpon>SetCardWindow.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="CardGame_form.resx">
+      <DependentUpon>CardGame_form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -71,10 +65,8 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="SetCardWindow.resx">
-      <DependentUpon>SetCardWindow.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -89,9 +81,12 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Lab_1_prog_pt_2\Lab_1_prog_pt_2\Lab_1_prog_pt_2.csproj">
-      <Project>{39ca77b4-a16e-41f7-b1e2-0c224fb3e99a}</Project>
-      <Name>Lab_1_prog_pt_2</Name>
+    <None Include="Resources\clubs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\DLL_for_Cards\DLL_for_Cards\DLL_for_Cards.csproj">
+      <Project>{244510c8-b183-4c22-9e5e-bfe000117bd5}</Project>
+      <Name>DLL_for_Cards</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
